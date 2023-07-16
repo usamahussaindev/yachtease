@@ -1,0 +1,936 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #191919;
+
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 10px;
+}
+
+.logo img {
+    height: 70px;
+    width: 150px;
+    margin-left: 40px;
+}
+
+.menu {
+    margin-right: 80px;
+}
+
+.menu li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 70px;
+}
+
+.menu li:first-child {
+    margin-left: 0;
+}
+
+.menu li a {
+    text-decoration: none;
+
+    color: #f7f3ee;
+    font-family: Alegreya Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 100% */
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 767px) {
+    .navbar {
+        margin: 15px 20px 0;
+        /* reduce margin on left and right */
+        gap: 11px;
+        width: auto;
+    }
+
+    .navbar-menu {
+        display: none;
+        /* hide menu items */
+    }
+
+    .navbar-logo img {
+        height: 30px;
+        /* reduce logo size */
+    }
+
+    .navbar-right {
+        flex-wrap: wrap;
+        /* allow items to wrap */
+    }
+
+    .navbar-language {
+        display: none;
+        /* remove margins between items */
+    }
+
+    .navbar-signup,
+    .navbar-language {
+        margin: 10px 10px;
+        /* remove margins between items */
+    }
+}
+
+/* iPads */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+
+    .menu {
+        display: none;
+        /* hide menu items */
+    }
+
+
+
+
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 767px) {
+    .navbar {
+        margin: 15px 20px 0;
+        /* reduce margin on left and right */
+        gap: 11px;
+        width: auto;
+    }
+
+    .menu {
+        display: none;
+        /* hide menu items */
+    }
+
+
+}
+
+/* iPads */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    /* your CSS styles here */
+    .navbar {
+        margin: 15px 20px 0;
+        /* reduce margin on left and right */
+
+        width: auto;
+    }
+
+    .menu {
+        display: none;
+        /* hide menu items */
+    }
+
+
+
+
+}
+
+
+/*this c=is css for humburger menu  for small screens */
+/* Hamburger menu items */
+.navbar-menu2-items {
+    position: absolute;
+    font-family: 'Inter';
+    font-style: normal;
+    left: 0;
+    width: 100%;
+
+    background-color: #0f0f0f;
+    display: none;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    top: 70px;
+}
+
+.navbar-menu2-items.active {
+    display: block;
+}
+
+.navbar-menu2-items ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar-menu2-items ul li {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.navbar-menu2-items ul li:last-child {
+    border-bottom: none;
+}
+
+.navbar-menu2-items ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.2s ease-in-out;
+}
+
+
+
+.navbar-toggle {
+
+    position: absolute;
+    top: 50px;
+    right: 90px;
+    z-index: 999;
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.navbar-toggle-icon-bar {
+    display: block;
+    width: 35px;
+    height: 4px;
+    background-color: #fff;
+    margin-bottom: 3px;
+    transition: all 0.2s ease-in-out;
+}
+
+@media (min-width: 1025px) {
+    .navbar-toggle {
+        display: none;
+    }
+}
+
+
+.login-container {
+    background-size: cover;
+    background-position: center;
+    width: 1440px;
+    height: 1024px;
+    /* Adjust the height as needed */
+    width: 100%;
+    /* Adjust the width as needed */
+    flex-shrink: 0;
+
+    padding: 0;
+    margin: 0;
+}
+
+
+/*login page css*/
+.login-form-container {
+    margin-top: 105px;
+    margin-left: auto;
+    /* Shifts the container to the right side */
+    width: 421px;
+    height: 553px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 5px 5px 15px 15px rgba(0, 0, 0, 0.1);
+    margin-right: 250px;
+
+}
+
+h1 {
+    margin-top: 50px;
+    text-align: center;
+    color: #000;
+    font-family: Alegreya Sans;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    /* 50% */
+    margin-bottom: 47px;
+}
+
+h2 {
+    margin-left: 53px;
+    color: #000;
+    font-family: Alegreya Sans;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 153.846% */
+}
+
+input[type="text"],
+input[type="password"] {
+    display: flex;
+    width: 309px;
+    padding: 14px 16px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 24px;
+    border: 1px solid #c1c1c1;
+    margin-left: 41px;
+    margin-bottom: 12px;
+}
+
+.login-button {
+    width: 120px;
+    margin: 20px auto 0;
+    /* Add top margin of 20px */
+    display: flex;
+    padding: 12px 102px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 24px;
+    background: #111b2d;
+    cursor: pointer;
+}
+
+.line {
+    border-bottom: 0.5px solid #ccc;
+    margin: 20px 0;
+}
+
+.signup-label {
+    text-align: center;
+    color: #666;
+    font-family: Alegreya Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    /* 142.857% */
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.create-account-label {
+    font-size: 14px;
+    color: #666;
+    font-family: Alegreya Sans;
+    text-align: center;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    .login-container {
+        background-size: cover;
+        background-position: center;
+        Width: 768px;
+        height: 1233px;
+        /* Adjust the height as needed */
+        width: 100%;
+        /* Adjust the width as needed */
+        flex-shrink: 0;
+
+        padding: 0;
+        margin: 0;
+    }
+
+    .login-form-container {
+        width: 471px;
+        height: 573px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        border-radius: 15px;
+        background: #fff;
+        box-shadow: 5px 5px 15px 15px rgba(0, 0, 0, 0.1);
+
+        /* Center the container horizontally and vertically */
+        position: absolute;
+        top: 32%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 200px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        display: flex;
+
+        width: 309px;
+        padding: 14px 16px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 24px;
+        border: 1px solid #c1c1c1;
+        margin-left: 61px;
+        margin-bottom: 12px;
+    }
+
+    h2 {
+        margin-left: 63px;
+        color: #000;
+        font-family: Alegreya Sans;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        /* 153.846% */
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        background-size: cover;
+        background-position: center;
+        width: 375px;
+        height: 910px;
+        /* Adjust the height as needed */
+        width: 100%;
+        /* Adjust the width as needed */
+        flex-shrink: 0;
+
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        overflow-y: auto;
+        /* Enable vertical scroll if needed */
+    }
+
+    .login-form-container {
+        width: 303px;
+        height: 560px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        border-radius: 15px;
+        background: #fff;
+        box-shadow: 5px 5px 15px 15px rgba(0, 0, 0, 0.1);
+
+        /* Center the container horizontally and vertically */
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 200px;
+        margin-bottom: 40px;
+        /* Add the desired bottom margin value */
+    }
+
+
+
+    input[type="text"],
+    input[type="password"] {
+        display: flex;
+        width: 223px;
+        padding: 14px 16px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 24px;
+        border: 1px solid #c1c1c1;
+        margin: 0 auto;
+        /* Center horizontally */
+        margin-bottom: 12px;
+    }
+
+    h2 {
+        margin-left: 33px;
+        color: #000;
+        font-family: Alegreya Sans;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        /* 153.846% */
+    }
+
+    .logo img {
+        height: 50px;
+        width: 100px;
+        margin-left: 0px;
+    }
+
+    .navbar-toggle {
+
+
+        top: 45px;
+        right: 50px;
+
+    }
+}
+
+
+
+/*this css for signup*/
+.Message-label {
+    margin-top: -14px;
+    color: #111B2D;
+    text-align: center;
+    font-family: Alegreya Sans;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    /* 117.647% */
+    text-decoration-line: underline;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.yacht {
+    margin-top: 60px;
+    margin-left: auto;
+    /* Shifts the container to the right side */
+    width: 421px;
+    height: 750px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 5px 5px 15px 15px rgba(0, 0, 0, 0.10);
+    margin-right: 250px;
+}
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+
+
+    .yacht {
+        width: 471px;
+        height: 773px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        border-radius: 15px;
+        background: #fff;
+        box-shadow: 5px 5px 15px 15px rgba(0, 0, 0, 0.1);
+
+        /* Center the container horizontally and vertically */
+        position: absolute;
+        top: 32%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 200px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        display: flex;
+
+        width: 309px;
+        padding: 14px 16px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 24px;
+        border: 1px solid #c1c1c1;
+        margin-left: 61px;
+        margin-bottom: 12px;
+    }
+
+    h2 {
+        margin-left: 63px;
+        color: #000;
+        font-family: Alegreya Sans;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        /* 153.846% */
+    }
+
+
+}
+
+@media (max-width: 480px) {
+
+    .yacht {
+        width: 303px;
+        height: 750px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        border-radius: 15px;
+        background: #fff;
+        box-shadow: 5px 5px 15px 15px rgba(0, 0, 0, 0.1);
+
+        /* Center the container horizontally and vertically */
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 200px;
+        margin-bottom: 40px;
+    }
+
+    h1 {
+        margin-top: 50px;
+        text-align: center;
+        color: #000;
+        font-family: Alegreya Sans;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        /* 50% */
+        margin-bottom: 47px;
+    }
+
+    body {
+        overflow-y: auto;
+        /* Enable vertical scroll if needed */
+    }
+
+}
+
+/*css for index page*/
+
+
+.hero-section {
+    color: #fff;
+    text-align: left;
+    background-color: transparent;
+}
+
+.hero-section h1 {
+    margin-top: 90px;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #FFF;
+    font-family: Signaturex Demo;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+    /* Align the heading to the left side */
+    margin-left: 146px;
+}
+
+
+.hero-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    margin-left: 146px;
+    color: #FFF;
+    font-family: Alegreya Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    height: 145px;
+    width: 690px;
+}
+
+.hero-section button {
+    border-radius: 30px;
+    background: rgb(128 115 107);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-left: 146px;
+    color: #FFF;
+    padding: 46px;
+    font-family: Alegreya Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 16px;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.hero-section button:hover {
+    background: rgb(168 155 147);
+    /* Update the background color on hover */
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.4);
+    /* Update the box shadow on hover */
+}
+
+.Container-home {
+
+    padding-top: 5%;
+
+    background-size: cover;
+    background-position: center;
+
+    height: 1557px;
+}
+
+.Container-home h2 {
+
+    font-size: 28px;
+
+    color: #FFF;
+    font-family: Signaturex Demo;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+    /* Align the heading to the left side */
+    margin-left: 10.6%;
+    margin-bottom: 30px;
+}
+
+.section-container {
+    display: flex;
+   
+    justify-content: space-between;
+
+    padding: 20px;
+}
+
+.left-part {
+    flex: 1;
+}
+
+.left-part p {
+    width: 382px;
+    height: 328px;
+    
+    margin-left:30%;
+    color: #FFF;
+    font-family: Alegreya Sans;
+    font-size: 24px;
+    font-style: normal;
+
+    line-height: normal;
+}
+
+.middle-part {
+    flex: 1;
+    text-align: center;
+}
+
+.right-part {
+    flex: 1;
+
+}
+
+.right-part h3{
+    color: #FFF;
+font-family: Alegreya Sans;
+font-size: 35px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+}
+.icon {
+    margin-top: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  
+  .subheading {
+    margin-bottom:0px;
+    display: inline-block;
+    margin: 0;
+    color: rgba(247, 243, 238, 0.70);
+    font-family: Alegreya Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+  .register-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+  }
+  
+  .register-button button {
+    background: rgb(128 115 107);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+    font-family: Alegreya Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 10px 50px; /* Adjust the padding as per your desired button size */
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  .register-button button:hover {
+    background-color: rgb(158 145 137); /* Adjust the desired hover background color */
+  }
+
+  .General-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   margin-top:100px;
+   margin-bottom:200px;
+  }
+  
+  .General-container h2 {
+    color: #FFF;
+    text-align: center;
+    margin: 0 auto; /* Add this line to center the heading accurately */
+    font-family: Signaturex Demo;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+  }
+
+  .MapBox-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Adjust the height as needed */
+  }
+  
+  .MapBox-container img {
+    width: 1225px;
+    height: 608.473px;
+  }
+  
+  .Search-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 30px;;
+  }
+  .Search-button button {
+    background: rgb(128 115 107);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+    font-family: Alegreya Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 10px 50px; /* Adjust the padding as per your desired button size */
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  .Search-button button:hover {
+    background-color: rgb(158 145 137); /* Adjust the desired hover background color */
+  }
+
+  .Picutres-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .Picutresheading {
+    flex: 1;
+  }
+
+  .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .paragraph {
+    margin-bottom: 20px;
+  }
+
+  .image {
+    width: 300px;
+  }
+
+  
+.feature-container {
+    display: flex;
+   
+    justify-content: space-between;
+
+    padding: 0px;
+}
+
+.left-paragraph {
+    flex: 1;
+    margin-top:90px;
+}
+.left-paragraph h2 {
+   
+   margin-left: 316px;
+    color: #FFF;
+    width: 440px;
+    font-family: Alegreya Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+
+.left-paragraph p {
+    width: 437px;
+    height: 328px;
+    margin-left: 316px;
+   
+    color: #FFF;
+    font-family: Alegreya Sans;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.left-Picture {
+    flex: 1;
+  
+   margin-left:54px;
+    width: 675px;
+height: 531px;
+flex-shrink: 0;
+}
+
+
+.General2-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   margin-top:100px;
+   margin-bottom:100px;
+  }
+  
+  .General2-container h2 {
+    color: #FFF;
+    text-align: center;
+    margin: 0 auto; /* Add this line to center the heading accurately */
+    font-family: Signaturex Demo;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+  }

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AboutUs</title>
+    
+    <link
+      href="https://fonts.cdnfonts.com/css/signaturex-demo"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Css/styles.css" />
+  </head>
+  <body>
+    <div
+      class="login-container"
+      style="background-image: url('Assests/login.png')"
+    >
+      <nav class="navbar">
+        <div class="logo">
+          <img src="Assests/YE LOGO ISAB (1) 1.png" alt="Logo" />
+        </div>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Instructions</a></li>
+          <li><a href="#">Explore</a></li>
+        </ul>
+      </nav>
+      <div class="menu2">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-menu2-items">
+          <span class="navbar-toggle-icon-bar"></span>
+          <span class="navbar-toggle-icon-bar"></span>
+          <span class="navbar-toggle-icon-bar"></span>
+        </button>
+  
+        <div class="navbar-menu2-items">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Instructions</a></li>
+            <li><a href="#">Explore</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <!--login form  -->
+      <div class="login-form-container">
+        <h1>Sign In</h1>
+        <h2>Email Adress</h2>
+        <input type="text" id="email" placeholder="Enter your email" />
+
+        <h2>Password</h2>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter your password"
+        />
+
+        <button type="submit" class="login-button">Login</button>
+        <div class="line"></div>
+
+        <p class="signup-label">Sign in With</p>
+
+        <div class="social-icons">
+          <img src="Assests/facebook2.png" alt="Facebook" />
+          <img src="Assests/google2.png" alt="Google" />
+          <img src="Assests/apple.png" alt="Apple" />
+        </div>
+        <div class="line"></div>
+
+        <p class="create-account-label">Create an account</p>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+<script>
+  var navbarToggle = document.querySelector(".navbar-toggle");
+  var navbarMenu2Items = document.querySelector(".navbar-menu2-items");
+
+  navbarToggle.addEventListener("click", function () {
+    navbarMenu2Items.classList.toggle("active");
+  });
+</script>
