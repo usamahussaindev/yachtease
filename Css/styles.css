@@ -514,9 +514,10 @@ input[type="password"] {
     box-shadow: 5px 5px 15px 15px rgba(0, 0, 0, 0.10);
     margin-right: 250px;
 }
-.yacht h2{
 
-       
+.yacht h2 {
+
+
     margin-left: 53px;
     color: #000;
     font-family: Alegreya Sans;
@@ -524,7 +525,7 @@ input[type="password"] {
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
-}    
+}
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
 
@@ -595,9 +596,9 @@ input[type="password"] {
         margin-bottom: 40px;
     }
 
-    
- 
-    
+
+
+
     h1 {
         margin-top: 50px;
         text-align: center;
@@ -1210,26 +1211,29 @@ input[type="password"] {
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
     .right-Picture {
-      flex: 1;
-      margin-top: 200px;
-      margin-left: 6px;
-      width: 675px !important;
-      height: 531px !important;
-      flex-shrink: 0;
+        flex: 1;
+        margin-top: 200px;
+        margin-left: 6px;
+        width: 675px !important;
+        height: 531px !important;
+        flex-shrink: 0;
     }
+
     .right-paragraph {
-      
+
         margin-top: 300px;
     }
+
     .right-paragraph p {
         width: 333px;
     }
+
     .right-paragraph h2 {
         margin-left: -120px;
     }
-    
-  }
-  
+
+}
+
 
 .feature2-container {
     background-size: cover;
@@ -1605,7 +1609,7 @@ ol li {
 
 
 .hero-section2 h1 {
-    margin-top: 60px;
+    margin-top: 100px;
     color: #FFF;
     text-align: right;
     text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -1615,7 +1619,23 @@ ol li {
     font-weight: 500;
     line-height: normal;
     text-transform: capitalize;
-    margin-right: 536px;
+    margin-right: 300px;
+}
+
+.hero-section2 p {
+    font-size: 18px;
+    text-align: right;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: 300px;
+    color: #FFF;
+    font-family: Alegreya Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    height: 145px;
+    width: 690px;
 }
 
 .AboutUs {
@@ -1623,9 +1643,9 @@ ol li {
     justify-content: space-between;
     background-size: cover;
     background-position: center;
-  
-  }
-  
+
+}
+
 
 .AboutUs h2 {
     padding-top: 60px;
@@ -1640,6 +1660,7 @@ ol li {
     margin-left: 236px;
     margin-bottom: 10px;
 }
+
 .head p {
     margin-bottom: -80px;
     margin-left: 236px;
@@ -1652,12 +1673,13 @@ ol li {
     font-weight: 500;
     line-height: normal;
 }
+
 p .highlighted {
     font-size: 26px;
     font-weight: bold;
     color: #fff;
-  }
-  
+}
+
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
     .AboutUs {
@@ -1665,11 +1687,12 @@ p .highlighted {
         justify-content: space-between;
         background-size: cover;
         background-position: center;
-     
-       
-        
-      }
-      .hero-section2 h1 {
+
+
+
+    }
+
+    .hero-section2 h1 {
         margin-top: 60px;
         color: #FFF;
         text-align: right;
@@ -1680,27 +1703,51 @@ p .highlighted {
         font-weight: 500;
         line-height: normal;
         text-transform: capitalize;
-        margin-right: 136px;
+        margin-right: 36px;
     }
-    .AboutUs h2 {
-      
-        margin-left: 16px;
+
+    .hero-section2 p {
+        font-size: 35px;
+        text-align: right;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: 36px;
+        color: #FFF;
+        font-family: Alegreya Sans;
+        color: #FFF;
+        text-align: right;
+        font-family: Alegreya Sans;
        
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        height: 145px;
+        width: 506px;}
+    
+    .AboutUs h2 {
+
+        margin-left: 16px;
+
     }
+
     .head p {
-        width:670px;
+        width: 670px;
         margin-bottom: -0px;
         margin-left: 16px;
-      
+
     }
+
     p .highlighted {
         font-size: 26px;
         margin-bottom: 60px;
         font-weight: bold;
         color: #fff;
-      }
+    }
 
-      .footer__logo {
+    .footer__logo {
         margin-left: 30px;
         margin-top: 40px;
         font-family: 'Pacifico', cursive;
@@ -1708,28 +1755,50 @@ p .highlighted {
         text-transform: lowercase;
         font-size: 1.5rem;
     }
-    
+
     .footer__social-icons {
         margin-left: 80px;
         margin-top: 5px;
         margin-bottom: 20px;
-    
+
     }
-  }
+}
 
 
-  /*css media responsive for mobile for about us */
-  @media only screen and (max-width: 576px) {
+/*css media responsive for mobile for about us */
+@media only screen and (max-width: 576px) {
     .AboutUs {
         display: flex;
         justify-content: space-between;
         background-size: cover;
         background-position: center;
-      
+
+
+
+    }
+
+    .hero-section2 p {
+        font-size: 28px;
+        text-align: right;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: 36px;
+        color: #FFF;
+        font-family: Alegreya Sans;
+        color: #FFF;
+        text-align: right;
+        font-family: Alegreya Sans;
        
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        font-style:light;
         
-      }
-      .hero-section2 h1 {
+        line-height: normal;
+        height: 145px;
+        width: 308px;}
+    
+    .hero-section2 h1 {
         margin-top: 60px;
         color: #FFF;
         text-align: right;
@@ -1741,29 +1810,33 @@ p .highlighted {
         line-height: normal;
         text-transform: capitalize;
         margin-right: 36px;
+        
     }
+
     .AboutUs h2 {
-      
+
         margin-left: 16px;
         font-size: 28px;
     }
+
     .head p {
-             margin-bottom: 0px;
+        margin-bottom: 0px;
         width: 336px;
         font-size: 18px;
         flex-shrink: 0;
-      
+
         margin-left: 16px;
         height: 378px;
     }
+
     p .highlighted {
         font-size: 26px;
-       
+
         font-weight: bold;
         color: #fff;
-      }
+    }
 
-      .footer__logo {
+    .footer__logo {
         margin-left: 30px;
         margin-top: 40px;
         font-family: 'Pacifico', cursive;
@@ -1771,59 +1844,62 @@ p .highlighted {
         text-transform: lowercase;
         font-size: 1.5rem;
     }
-    
+
     .footer__social-icons {
         margin-left: 80px;
         margin-top: 5px;
         margin-bottom: 20px;
-    
+
     }
+
     .footer__social-icons {
         margin-left: 138px;
         margin-top: 5px;
         margin-bottom: 20px;
-    
+
     }
-  
-  }
+
+}
+
 /*css media responsive for policy page*/
-  
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
 
 
-   
-    .policy{
 
-        height:3000px;
+    .policy {
+
+        height: 3000px;
     }
+
     .hero-Policy h1 {
         margin-top: 150px;
-        
-       
+
+
         font-size: 45px;
         font-style: normal;
-       
+
         margin-left: 56px;
     }
-    
- 
-    
+
+
+
     .headpolicy h2 {
         margin-top: 90px;
         font-size: 32px;
         margin-bottom: 20px;
-     
-     
+
+
         margin-left: 36px;
-      
+
     }
-    
-    
+
+
     .headpolicy p {
-    
+
         margin-bottom: 50px;
         margin-left: 55px;
-        
+
         width: 656px;
         color: #FFF;
         font-family: Alegreya Sans;
@@ -1832,12 +1908,12 @@ p .highlighted {
         font-weight: 300;
         line-height: normal;
     }
-    
+
     ol {
         margin-bottom: 620px;
         margin-left: 70px;
         width: 636px;
-       
+
         color: #FFF;
         font-family: Alegreya Sans;
         font-size: 24px;
@@ -1845,7 +1921,7 @@ p .highlighted {
         font-weight: 300;
         line-height: normal;
     }
-    
+
     ol li {
         list-style-type: decimal;
         /* Display numbering */
@@ -1857,42 +1933,42 @@ p .highlighted {
 }
 
 
-  /*css media responsive for mobile for policyPage */
-  @media only screen and (max-width: 576px) {
- 
-    .policy{
+/*css media responsive for mobile for policyPage */
+@media only screen and (max-width: 576px) {
 
-        height:3500px;
+    .policy {
+
+        height: 3500px;
     }
 
     .hero-Policy h1 {
         margin-top: 150px;
         width: 308px;
-       
-        font-size:40px;
+
+        font-size: 40px;
         font-style: normal;
-       
+
         margin-left: 46px;
     }
-    
- 
-    
+
+
+
     .headpolicy h2 {
         margin-top: 90px;
         font-size: 32px;
         margin-bottom: 20px;
-     
-     
+
+
         margin-left: 36px;
-      
+
     }
-    
-    
+
+
     .headpolicy p {
-    
+
         margin-bottom: 70px;
         margin-left: 45px;
-        
+
         width: 306px;
         color: #FFF;
         font-family: Alegreya Sans;
@@ -1901,13 +1977,13 @@ p .highlighted {
         font-weight: 300;
         line-height: normal;
     }
-    
+
     ol {
-      
+
         margin-bottom: 850px;
         margin-left: 50px;
         width: 306px;
-       
+
         color: #FFF;
         font-family: Alegreya Sans;
         font-size: 18px;
@@ -1915,11 +1991,239 @@ p .highlighted {
         font-weight: 300;
         line-height: normal;
     }
-    
+
     ol li {
         margin-bottom: 4px;
         list-style-type: decimal;
         /* Display numbering */
     }
 
-  }
+}
+
+.Instruction-container {
+    margin-left: 100px;;
+
+}
+
+.Instruction-container h2 {
+    color: #FFF;
+    font-family: Alegreya Sans;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+    
+
+
+}
+
+
+.Instruction-container p {
+    margin-left: 146px;
+    width: 690px;
+    color: #FFF;
+    font-family: Alegreya Sans;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+    margin-bottom: 84px;
+}
+
+.Instruction2-container h2 {
+    color: #FFF;
+    font-family: Alegreya Sans;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: right;
+    margin-right: 0;
+    /* Remove the previous margin-right value */
+    margin-left: auto;
+    /* Add auto margin to align the heading to the right */
+}
+
+.Instruction2-container {
+    margin-left: auto;
+    /* Add auto margin to center the container horizontally */
+    margin-right: 300px;
+    /* Add right margin to create space between the container and the right side of the page */
+    width: 690px;
+    color: #FFF;
+    font-family: Alegreya Sans;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: right;
+    /* Align the content inside the container to the left */
+    margin-bottom: 84px;
+}
+
+.instruction-Container-home {
+    padding-top: 5%;
+    background-size: cover;
+    background-position: center;
+    height: 2757px;
+}
+
+.instruction-Container-home h2 {
+    margin-bottom: 30px;
+    margin-left: 146px;
+}
+
+.intruction-section h2 {
+    /* margin-top: 100px; */
+    padding-top: 180px;
+    color: #FFF;
+    text-align: right;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-family: Signaturex Demo;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-right: 300px;
+}
+
+
+/*css media responsive for Instruction  page*/
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+    .Instruction-container {
+        margin-left: 0px;;
+    
+    }
+
+    .instruction-Container-home h2 {
+        margin-bottom: 30px;
+        margin-left: 30px;
+    }
+    
+
+    
+.Instruction-container p {
+    margin-left: 30px;
+    width: 508px;
+    color: #FFF;
+    font-family: Alegreya Sans;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+    margin-bottom: 84px;
+}
+
+
+
+.Instruction2-container {
+    margin-left: auto;
+    /* Add auto margin to center the container horizontally */
+    margin-right: 30px;
+    /* Add right margin to create space between the container and the right side of the page */
+    width: 690px;
+    color: #FFF;
+    font-family: Alegreya Sans;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: right;
+    /* Align the content inside the container to the left */
+    margin-bottom: 84px;
+}
+.instruction-Container-home {
+    padding-top: 5%;
+    background-size: cover;
+    background-position: center;
+    height: 3157px;
+}
+
+.intruction-section h2 {
+    /* margin-top: 100px; */
+    padding-top: 180px;
+    color: #FFF;
+    text-align: right;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-family: Signaturex Demo;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-right: 30px;
+}
+
+
+    }
+    
+
+
+
+/*css media responsive for mobile for instruction page */
+@media only screen and (max-width: 576px) {
+    .Instruction-container {
+        margin-left: 10px;
+    }
+
+    .instruction-Container-home h2 {
+        margin-bottom: 30px;
+        margin-left: 0px;
+    }
+    
+
+    
+    .Instruction-container p {
+        margin-left: 0px;
+        width: 336px;
+        color: #FFF;
+        font-family: Alegreya Sans;
+        font-size: 18px;
+        font-style: normal;
+  
+        line-height: normal;
+        text-align: left;
+        margin-bottom: 84px;
+    }
+    
+
+
+    .Instruction2-container h2 {
+        color: #FFF;
+        font-family: Alegreya Sans;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: left;
+        margin-right: 0;
+        /* Remove the previous margin-right value */
+        margin-left: auto;
+        /* Add auto margin to align the heading to the right */
+    }
+    
+    .Instruction2-container {
+        margin-left: 10px;
+        width: 336px;
+        color: #FFF;
+        font-family: Alegreya Sans;
+        font-size: 18px;
+        font-style: normal;
+  
+        line-height: normal;
+        text-align: left;
+        margin-bottom: 84px;
+    }
+    .instruction-Container-home {
+        padding-top: 5%;
+        background-size: cover;
+        background-position: center;
+        height: 3257px;
+    }
+}
