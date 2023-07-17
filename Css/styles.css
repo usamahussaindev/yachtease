@@ -628,6 +628,28 @@ input[type="password"] {
     background-color: transparent;
 }
 
+.admin-section {
+    color: #fff;
+    text-align: center;
+    background-color: transparent;
+}
+
+.admin-section h1 {
+    margin-top: 90px;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #FFF;
+    font-family: Signaturex Demo;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    /* Align the heading to the left side */
+
+}
+
+
 .hero-section h1 {
     margin-top: 90px;
     font-size: 32px;
@@ -693,6 +715,17 @@ input[type="password"] {
         line-height: normal;
         /* Align the heading to the left side */
         margin-left: 46px;
+    }
+
+    .admin-section h1 {
+        color: #FFF;
+        font-family: Signaturex Demo;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        /* Align the heading to the left side */
+
     }
 
     .hero-section p {
@@ -1717,7 +1750,7 @@ p .highlighted {
         color: #FFF;
         text-align: right;
         font-family: Alegreya Sans;
-       
+
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -1725,8 +1758,9 @@ p .highlighted {
         font-weight: 300;
         line-height: normal;
         height: 145px;
-        width: 506px;}
-    
+        width: 506px;
+    }
+
     .AboutUs h2 {
 
         margin-left: 16px;
@@ -1788,16 +1822,17 @@ p .highlighted {
         color: #FFF;
         text-align: right;
         font-family: Alegreya Sans;
-       
+
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        font-style:light;
-        
+        font-style: light;
+
         line-height: normal;
         height: 145px;
-        width: 308px;}
-    
+        width: 308px;
+    }
+
     .hero-section2 h1 {
         margin-top: 60px;
         color: #FFF;
@@ -1810,7 +1845,15 @@ p .highlighted {
         line-height: normal;
         text-transform: capitalize;
         margin-right: 36px;
-        
+
+    }
+
+    .admin-section h1 {
+        color: #FFF;
+        font-family: Signaturex Demo;
+        font-size: 25px;
+        font-style: normal;
+
     }
 
     .AboutUs h2 {
@@ -2001,7 +2044,8 @@ p .highlighted {
 }
 
 .Instruction-container {
-    margin-left: 100px;;
+    margin-left: 100px;
+    ;
 
 }
 
@@ -2013,7 +2057,7 @@ p .highlighted {
     font-weight: 700;
     line-height: normal;
     text-align: left;
-    
+
 
 
 }
@@ -2096,78 +2140,83 @@ p .highlighted {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
 
     .Instruction-container {
-        margin-left: 0px;;
-    
+        margin-left: 0px;
+        ;
+
     }
 
     .instruction-Container-home h2 {
         margin-bottom: 30px;
         margin-left: 30px;
     }
-    
-
-    
-.Instruction-container p {
-    margin-left: 30px;
-    width: 508px;
-    color: #FFF;
-    font-family: Alegreya Sans;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-align: left;
-    margin-bottom: 84px;
-}
 
 
 
-.Instruction2-container {
-    margin-left: auto;
-    /* Add auto margin to center the container horizontally */
-    margin-right: 30px;
-    /* Add right margin to create space between the container and the right side of the page */
-    width: 690px;
-    color: #FFF;
-    font-family: Alegreya Sans;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-align: right;
-    /* Align the content inside the container to the left */
-    margin-bottom: 84px;
-}
-.instruction-Container-home {
-    padding-top: 5%;
-    background-size: cover;
-    background-position: center;
-    height: 3157px;
-}
-
-.intruction-section h2 {
-    /* margin-top: 100px; */
-    padding-top: 180px;
-    color: #FFF;
-    text-align: right;
-    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    font-family: Signaturex Demo;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    text-transform: capitalize;
-    margin-right: 30px;
-}
-
-
+    .Instruction-container p {
+        margin-left: 30px;
+        width: 508px;
+        color: #FFF;
+        font-family: Alegreya Sans;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: left;
+        margin-bottom: 84px;
     }
-    
+
+
+
+    .Instruction2-container {
+        margin-left: auto;
+        /* Add auto margin to center the container horizontally */
+        margin-right: 30px;
+        /* Add right margin to create space between the container and the right side of the page */
+        width: 690px;
+        color: #FFF;
+        font-family: Alegreya Sans;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: right;
+        /* Align the content inside the container to the left */
+        margin-bottom: 84px;
+    }
+
+    .instruction-Container-home {
+        padding-top: 5%;
+        background-size: cover;
+        background-position: center;
+        height: 3157px;
+    }
+
+    .intruction-section h2 {
+        /* margin-top: 100px; */
+        padding-top: 180px;
+        color: #FFF;
+        text-align: right;
+        text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        font-family: Signaturex Demo;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+        margin-right: 30px;
+    }
+
+
+}
+
 
 
 
 /*css media responsive for mobile for instruction page */
 @media only screen and (max-width: 576px) {
+   
+    
+    
     .Instruction-container {
         margin-left: 10px;
     }
@@ -2176,9 +2225,9 @@ p .highlighted {
         margin-bottom: 30px;
         margin-left: 0px;
     }
-    
 
-    
+
+
     .Instruction-container p {
         margin-left: 0px;
         width: 336px;
@@ -2186,12 +2235,12 @@ p .highlighted {
         font-family: Alegreya Sans;
         font-size: 18px;
         font-style: normal;
-  
+
         line-height: normal;
         text-align: left;
         margin-bottom: 84px;
     }
-    
+
 
 
     .Instruction2-container h2 {
@@ -2207,7 +2256,7 @@ p .highlighted {
         margin-left: auto;
         /* Add auto margin to align the heading to the right */
     }
-    
+
     .Instruction2-container {
         margin-left: 10px;
         width: 336px;
@@ -2215,15 +2264,119 @@ p .highlighted {
         font-family: Alegreya Sans;
         font-size: 18px;
         font-style: normal;
-  
+
         line-height: normal;
         text-align: left;
         margin-bottom: 84px;
     }
+
     .instruction-Container-home {
         padding-top: 5%;
         background-size: cover;
         background-position: center;
         height: 3257px;
     }
+}
+
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.text-field {
+    width: 498px;
+    height: 109px;
+    padding: 10px;
+    border-radius: 15px;
+    background: #FFF;
+}
+
+
+.Admin-page-paragraph {
+    margin-top: 130px;
+    color: #FFF;
+    text-align: center;
+    font-family: Alegreya Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+.center-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-button button {
+    border-radius: 30px;
+    background: rgb(128 115 107);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 40px;
+ 
+    color: #FFF;
+    padding: 46px;
+    font-family: Alegreya Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 16px;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.center-button button:hover {
+    background: rgb(168 155 147);
+    /* Update the background color on hover */
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.4);
+    /* Update the box shadow on hover */
+}
+.centerB-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centerB-button button {
+    border-radius: 30px;
+    background: rgb(128 115 107);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #FFF;
+    padding: 46px;
+    font-family: Alegreya Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 16px;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.centerB-button button:hover {
+    background: rgb(168 155 147);
+    /* Update the background color on hover */
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.4);
+    /* Update the box shadow on hover */
+}
+
+@media only screen and (max-width: 576px) {
+    .text-field {
+        width: 348px;
+        height: 109px;
+        padding: 10px;
+        border-radius: 15px;
+        background: #FFF;
+    }
+    
 }
