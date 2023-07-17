@@ -1,0 +1,163 @@
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .left-paragraph {
+        flex: 1;
+        /*  */
+        margin-top: 1px;
+    }
+    .left-paragraph h2 {
+        margin-top: 100px;
+           margin-left: 40px;
+        color: #FFF;
+        width: 339px;
+        font-family: Alegreya Sans;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    .left-paragraph p {
+        width: 339px;
+        margin-left: 40px;
+        color: #FFF;
+        font-family: Alegreya Sans;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .left-Picture {
+        margin-top: 100px;
+        max-width: 50%;
+        flex: 1;
+        width: 359px;
+height: 258px;
+flex-shrink: 0;
+        flex-shrink: 0;
+          margin-left: 40px;
+    }
+
+    .left-Picture img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+
+.feature-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.left-paragraph {
+    flex: 1;
+    margin-top: 90px;
+}
+
+
+
+
+
+
+
+
+.General2-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.General2-container h2 {
+    color: #FFF;
+    text-align: center;
+    margin: 0 auto;
+    /* Add this line to center the heading accurately */
+    font-family: Signaturex Demo;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.right-paragraph {
+    flex: 1;
+    margin-top: 90px;
+}
+
+.right-paragraph {
+    text-align: right;
+}
+
+.right-paragraph h2 {
+
+    color: #FFF;
+    width: 440px;
+    font-family: Alegreya Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.right-paragraph p {
+    width: 437px;
+    height: 328px;
+    color: #FFF;
+    font-family: Alegreya Sans;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.right-Picture {
+    flex: 1;
+
+
+    margin-left: 306px;
+    width: 675px;
+    height: 531px;
+    flex-shrink: 0;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    
+
+    .right-Picture {
+        margin-top: 100px;
+        max-width: 50%;
+        flex: 1;
+        width: 359px;
+height: 258px;
+flex-shrink: 0;
+        flex-shrink: 0;
+          margin-left: 40px;
+    }
+
+    .right-Picture img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    .right-paragraph {
+
+        margin-top: 100px;
+    }
+
+    .right-paragraph p {
+        width: 333px;
+    }
+
+    .right-paragraph h2 {
+        margin-left: -120px;
+    }
+
+}
