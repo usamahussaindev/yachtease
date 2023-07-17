@@ -514,7 +514,17 @@ input[type="password"] {
     box-shadow: 5px 5px 15px 15px rgba(0, 0, 0, 0.10);
     margin-right: 250px;
 }
+.yacht h2{
 
+       
+    margin-left: 53px;
+    color: #000;
+    font-family: Alegreya Sans;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}    
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
 
@@ -585,6 +595,9 @@ input[type="password"] {
         margin-bottom: 40px;
     }
 
+    
+ 
+    
     h1 {
         margin-top: 50px;
         text-align: center;
