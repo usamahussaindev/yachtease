@@ -147,10 +147,13 @@ body {
     position: absolute;
     font-family: 'Inter';
     font-style: normal;
-    left: 0;
-    width: 100%;
-
-    background-color: #0f0f0f;
+    right: 0;
+    width: 246px;
+    height: 408px;
+    flex-shrink: 0;
+    z-index: 1;
+    border-radius: 15px;
+    background: #433933;
     display: none;
     border: 1px solid rgba(255, 255, 255, 0.12);
     top: 70px;
@@ -260,7 +263,7 @@ h1 {
     margin-bottom: 47px;
 }
 
-h2 {
+.login-form-container h2 {
     margin-left: 53px;
     color: #000;
     font-family: Alegreya Sans;
@@ -559,6 +562,7 @@ input[type="password"] {
     }
 
 
+
 }
 
 @media (max-width: 480px) {
@@ -665,6 +669,82 @@ input[type="password"] {
     /* Update the box shadow on hover */
 }
 
+@media only screen and (max-width: 1024px) {
+    .hero-section h1 {
+        color: #FFF;
+        font-family: Signaturex Demo;
+        font-size: 55px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        /* Align the heading to the left side */
+        margin-left: 46px;
+    }
+
+    .hero-section p {
+        font-size: 18px;
+        margin-bottom: 30px;
+        margin-left: 46px;
+        color: #FFF;
+        font-family: Alegreya Sans;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        height: 145px;
+        width: 690px;
+    }
+
+    .hero-section button {
+        border-radius: 30px;
+        background: rgb(128 115 107);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        margin-left: 46px;
+        color: #FFF;
+        padding: 46px;
+        font-family: Alegreya Sans;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        font-size: 16px;
+        padding: 10px 30px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .Container-home h2 {
+
+        font-size: 28px;
+        margin-left: 46px;
+        color: #FFF;
+        font-family: Signaturex Demo;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: left;
+        /* Align the heading to the left side */
+
+        margin-bottom: 30px;
+    }
+
+    .left-part p {
+        width: 382px;
+        height: 328px;
+
+        margin-left: 20%;
+        color: #FFF;
+        font-family: Alegreya Sans;
+        font-size: 24px;
+        font-style: normal;
+
+        line-height: normal;
+    }
+
+
+}
+
 .Container-home {
 
     padding-top: 5%;
@@ -678,7 +758,7 @@ input[type="password"] {
 .Container-home h2 {
 
     font-size: 28px;
-
+    margin-left: 146px;
     color: #FFF;
     font-family: Signaturex Demo;
     font-size: 45px;
@@ -687,13 +767,13 @@ input[type="password"] {
     line-height: normal;
     text-align: left;
     /* Align the heading to the left side */
-    margin-left: 10.6%;
+
     margin-bottom: 30px;
 }
 
 .section-container {
     display: flex;
-   
+
     justify-content: space-between;
 
     padding: 20px;
@@ -706,8 +786,8 @@ input[type="password"] {
 .left-part p {
     width: 382px;
     height: 328px;
-    
-    margin-left:30%;
+
+    margin-left: 30%;
     color: #FFF;
     font-family: Alegreya Sans;
     font-size: 24px;
@@ -726,15 +806,16 @@ input[type="password"] {
 
 }
 
-.right-part h3{
+.right-part h3 {
     color: #FFF;
-font-family: Alegreya Sans;
-font-size: 35px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-text-transform: uppercase;
+    font-family: Alegreya Sans;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
 }
+
 .icon {
     margin-top: 40px;
     display: inline-flex;
@@ -745,10 +826,10 @@ text-transform: uppercase;
     background-color: #000;
     margin-right: 20px;
     margin-left: 20px;
-  }
-  
-  .subheading {
-    margin-bottom:0px;
+}
+
+.subheading {
+    margin-bottom: 0px;
     display: inline-block;
     margin: 0;
     color: rgba(247, 243, 238, 0.70);
@@ -757,16 +838,69 @@ text-transform: uppercase;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-  }
-  
-  .register-button {
+}
+
+
+@media screen and (max-width: 1024px) {
+
+
+    .Container-home h2 {
+
+        font-size: 28px;
+        margin-left: 36px;
+        color: #FFF;
+        font-family: Signaturex Demo;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: left;
+        /* Align the heading to the left side */
+
+        margin-bottom: 30px;
+    }
+
+    .section-container {
+        flex-direction: column;
+
+
+    }
+
+    .middle-part {
+        order: 2;
+        margin-left: 28px;
+        text-align: left;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .right-part {
+        order: 3;
+        margin-top: 30px;
+        margin-left: 28px;
+    }
+
+    .left-part p {
+        width: 100%;
+        margin-left: 18px;
+        width: 598px;
+        font-family: Alegreya Sans;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+}
+
+.register-button {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 70px;
-  }
-  
-  .register-button button {
+}
+
+.register-button button {
     background: rgb(128 115 107);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     color: #FFF;
@@ -775,55 +909,91 @@ text-transform: uppercase;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    padding: 10px 50px; /* Adjust the padding as per your desired button size */
+    padding: 10px 50px;
+    /* Adjust the padding as per your desired button size */
     border: none;
     border-radius: 30px;
     cursor: pointer;
-  }
-  .register-button button:hover {
-    background-color: rgb(158 145 137); /* Adjust the desired hover background color */
-  }
+}
 
-  .General-container {
+.register-button button:hover {
+    background-color: rgb(158 145 137);
+    /* Adjust the desired hover background color */
+}
+
+.General-container {
     display: flex;
     align-items: center;
     justify-content: center;
-   margin-top:100px;
-   margin-bottom:200px;
-  }
-  
-  .General-container h2 {
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.General-container h2 {
     color: #FFF;
     text-align: center;
-    margin: 0 auto; /* Add this line to center the heading accurately */
+    margin: 0 auto;
+    /* Add this line to center the heading accurately */
     font-family: Signaturex Demo;
     font-size: 35px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    
-  }
 
-  .MapBox-container {
+}
+
+.MapBox-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px; /* Adjust the height as needed */
-  }
-  
-  .MapBox-container img {
+    height: 300px;
+    /* Adjust the height as needed */
+}
+
+.MapBox-container img {
     width: 1225px;
     height: 608.473px;
-  }
-  
-  .Search-button {
+}
+
+@media screen and (max-width: 1024px) {
+    .MapBox-container img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+
+    }
+
+
+    .Search-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 150px;
+        margin-bottom: 30px;
+
+
+    }
+
+    .feature-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px;
+        width: 30%;
+    }
+
+
+}
+
+.Search-button {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 150px;
-    margin-bottom: 30px;;
-  }
-  .Search-button button {
+    margin-bottom: 30px;
+    ;
+}
+
+.Search-button button {
     background: rgb(128 115 107);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     color: #FFF;
@@ -832,55 +1002,168 @@ text-transform: uppercase;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    padding: 10px 50px; /* Adjust the padding as per your desired button size */
+    padding: 10px 50px;
+    /* Adjust the padding as per your desired button size */
     border: none;
     border-radius: 30px;
     cursor: pointer;
-  }
-  .Search-button button:hover {
-    background-color: rgb(158 145 137); /* Adjust the desired hover background color */
-  }
+}
 
-  .Picutres-container {
+.Search-button button:hover {
+    background-color: rgb(158 145 137);
+    /* Adjust the desired hover background color */
+}
+
+.Picutres-container {
     display: flex;
     align-items: center;
-  }
+}
 
-  .Picutresheading {
+.Picutresheading {
     flex: 1;
-  }
+}
 
-  .content {
+.content {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-  }
+}
 
-  .paragraph {
+.paragraph {
     margin-bottom: 20px;
-  }
+}
 
-  .image {
+.image {
     width: 300px;
-  }
+}
 
-  
+/* Media queries for tablets and iPads */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+    .left-paragraph h2 {
+        margin-top: 100px;
+        margin-left: 6px;
+        color: #FFF;
+        width: 339px;
+        font-family: Alegreya Sans;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    .left-paragraph p {
+        width: 339px;
+        margin-left: 6px;
+        color: #FFF;
+        font-family: Alegreya Sans;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .left-Picture {
+        margin-top: 190px;
+        ;
+        flex: 1;
+        width: 309px;
+        height: 208px;
+
+        flex-shrink: 0;
+    }
+
+
+}
+
+
 .feature-container {
     display: flex;
-   
     justify-content: space-between;
-
     padding: 0px;
 }
 
 .left-paragraph {
     flex: 1;
-    margin-top:90px;
+    margin-top: 90px;
 }
-.left-paragraph h2 {
-   
-   margin-left: 316px;
+
+@media (min-width: 1024px) {
+    .left-paragraph h2 {
+        margin-left: 316px;
+        color: #FFF;
+        width: 440px;
+        font-family: Alegreya Sans;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    .left-paragraph p {
+        width: 437px;
+        height: 328px;
+        margin-left: 316px;
+        color: #FFF;
+        font-family: Alegreya Sans;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .left-Picture {
+        flex: 1;
+        margin-left: 70px;
+        width: 675px;
+        height: 531px;
+        flex-shrink: 0;
+    }
+
+
+}
+
+
+
+
+
+
+.General2-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.General2-container h2 {
+    color: #FFF;
+    text-align: center;
+    margin: 0 auto;
+    /* Add this line to center the heading accurately */
+    font-family: Signaturex Demo;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.right-paragraph {
+    flex: 1;
+    margin-top: 90px;
+}
+
+.right-paragraph {
+    text-align: right;
+}
+
+.right-paragraph h2 {
+
     color: #FFF;
     width: 440px;
     font-family: Alegreya Sans;
@@ -891,12 +1174,9 @@ text-transform: uppercase;
     text-transform: uppercase;
 }
 
-
-.left-paragraph p {
+.right-paragraph p {
     width: 437px;
     height: 328px;
-    margin-left: 316px;
-   
     color: #FFF;
     font-family: Alegreya Sans;
     font-size: 25px;
@@ -905,32 +1185,728 @@ text-transform: uppercase;
     line-height: normal;
 }
 
-.left-Picture {
+.right-Picture {
     flex: 1;
-  
-   margin-left:54px;
+
+
+    margin-left: 306px;
     width: 675px;
-height: 531px;
-flex-shrink: 0;
+    height: 531px;
+    flex-shrink: 0;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .right-Picture {
+      flex: 1;
+      margin-top: 200px;
+      margin-left: 6px;
+      width: 675px !important;
+      height: 531px !important;
+      flex-shrink: 0;
+    }
+    .right-paragraph {
+      
+        margin-top: 300px;
+    }
+    .right-paragraph p {
+        width: 333px;
+    }
+    .right-paragraph h2 {
+        margin-left: -120px;
+    }
+    
+  }
+  
+
+.feature2-container {
+    background-size: cover;
+    background-position: center;
+    width: 375px;
+    height: 500px;
+    /* Adjust the height as needed */
+    width: 100%;
+    display: flex;
+
+
+    justify-content: space-between;
+
+    padding: 0px;
+
+    padding: 0;
+    margin: 0;
+}
+
+.centered-paragraph {
+    color: #FFF;
+    text-align: center;
+    font-family: Alegreya Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 250px;
 }
 
 
-.General2-container {
+.General3-container {
     display: flex;
     align-items: center;
     justify-content: center;
-   margin-top:100px;
-   margin-bottom:100px;
-  }
-  
-  .General2-container h2 {
+    margin-top: 100px;
+    margin-bottom: 24px;
+}
+
+.General3-container h2 {
     color: #FFF;
     text-align: center;
-    margin: 0 auto; /* Add this line to center the heading accurately */
+    margin: 0 auto;
+    /* Add this line to center the heading accurately */
     font-family: Signaturex Demo;
     font-size: 35px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
+}
+
+
+.whatsapp-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    margin-bottom: 225px;
+    /* Adjust the height as needed */
+}
+
+.whatsapp-container img {
+    width: 1225px;
+    height: 608.473px;
+    border-radius: 24px;
+
+}
+
+.Price-container {
+    padding-top: 80px;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+
+    flex-wrap: wrap;
+    /* Allow wrapping of flex items */
+}
+
+.Price-container .price-left-part,
+.Price-container .price-middle-part,
+.Price-container .price-right-part {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+
+.Container-home2 {
+
+    padding-top: 5%;
+
+    background-size: cover;
+    background-position: center;
+
+    height: 2557px;
+}
+
+.centered2-paragraph {
+    color: #F7F3EE;
+    text-align: center;
+    font-family: Alegreya Sans;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 60px;
+
+}
+
+.register2-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.register2-button button {
+    background: rgb(128 115 107);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+    font-family: Alegreya Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 10px 50px;
+    /* Adjust the padding as per your desired button size */
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.register2-button button:hover {
+    background-color: rgb(158 145 137);
+    /* Adjust the desired hover background color */
+}
+
+.Container2-home {
+
+    padding-top: 5%;
+
+    background-size: cover;
+    background-position: center;
+
+    height: 757px;
+}
+
+
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px 30px 20px 30px;
+    color: #2f2f2f;
+    background-color: #141414;
+
+}
+
+.footer>* {
+    flex: 1 100%;
+}
+
+.footer__addr {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+}
+
+.footer__logo {
+    margin-left: -235px;
+    margin-top: 40px;
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    text-transform: lowercase;
+    font-size: 1.5rem;
+}
+
+.footer__social-icons {
+    margin-left: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.footer__addr h2 {
+    margin-top: 1.3em;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.nav__title {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.footer address {
+    font-style: normal;
+    color: #999;
+}
+
+.footer__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    max-width: max-content;
+    background-color: rgb(33, 33, 33, 0.07);
+    border-radius: 100px;
+    color: #2f2f2f;
+    line-height: 0;
+    margin: 0.6em 0;
+    font-size: 1rem;
+    padding: 0 1.3em;
+}
+
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer li {
+    line-height: 2em;
+    font-family: Alegreya Sans;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer__nav {
+    margin-top: 45px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.footer__nav>* {
+    flex: 1 50%;
+    margin-right: 1.25em;
+}
+
+.nav__ul a {
+
+    color: #999;
+}
+
+.nav__ul--extra {
+
+    column-count: 2;
+    column-gap: 1.25em;
+}
+
+.legal {
+    margin-top: 29px;
+    margin-bottom: 31px;
+    text-align: center;
+    flex-wrap: wrap;
+    color: #999;
+}
+
+.legal__links {
+    display: flex;
+    align-items: center;
+}
+
+.heart {
+    color: #2f2f2f;
+}
+
+
+
+@media screen and (min-width: 24.375em) {
+    .legal .legal__links {
+        margin-left: auto;
+    }
+}
+
+@media screen and (min-width: 40.375em) {
+    .footer__nav>* {
+        flex: 1;
+    }
+
+    .nav__item--extra {
+        flex-grow: 2;
+    }
+
+    .footer__addr {
+        flex: 1 0px;
+    }
+
+    .footer__nav {
+        flex: 2 0px;
+    }
+}
+
+/*css for policy Page */
+
+.hero-Policy {
+    color: #fff;
+    text-align: left;
+    background-color: transparent;
+}
+
+.hero-Policy h1 {
+    margin-top: 120px;
+    text-align: left;
+    margin-bottom: 20px;
+    color: #FFF;
+    font-family: Signaturex Demo;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 156px;
+}
+
+.policy {
+    display: flex;
+    justify-content: space-between;
+    background-size: cover;
+    background-position: center;
+
+    height: 1900px;
+}
+
+.headpolicy h2 {
+    margin-top: 90px;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #FFF;
+    font-family: Alegreya Sans;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 236px;
+    margin-bottom: 30px;
+}
+
+
+.headpolicy p {
+
+
+    margin-left: 236px;
+    width: 1300px;
+    height: 80px;
+    color: #FFF;
+    font-family: Alegreya Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+ol {
+    margin-bottom: 220px;
+    margin-left: 260px;
+    width: 1300px;
+    height: 328px;
+    color: #FFF;
+    font-family: Alegreya Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+ol li {
+    list-style-type: decimal;
+    /* Display numbering */
+}
+
+/*css for AboutUs Page */
+
+
+.hero-section2 h1 {
+    margin-top: 60px;
+    color: #FFF;
+    text-align: right;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-family: Signaturex Demo;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-right: 536px;
+}
+
+.AboutUs {
+    display: flex;
+    justify-content: space-between;
+    background-size: cover;
+    background-position: center;
+  
+  }
+  
+
+.AboutUs h2 {
+    padding-top: 60px;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #FFF;
+    font-family: Signaturex Demo;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 236px;
+    margin-bottom: 10px;
+}
+.head p {
+    margin-bottom: -80px;
+    margin-left: 236px;
+    width: 1068px;
+    height: 328px;
+    color: #FFF;
+    font-family: Alegreya Sans;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+p .highlighted {
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .AboutUs {
+        display: flex;
+        justify-content: space-between;
+        background-size: cover;
+        background-position: center;
+     
+       
+        
+      }
+      .hero-section2 h1 {
+        margin-top: 60px;
+        color: #FFF;
+        text-align: right;
+        text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        font-family: Signaturex Demo;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+        margin-right: 136px;
+    }
+    .AboutUs h2 {
+      
+        margin-left: 16px;
+       
+    }
+    .head p {
+        width:670px;
+        margin-bottom: -0px;
+        margin-left: 16px;
+      
+    }
+    p .highlighted {
+        font-size: 26px;
+        margin-bottom: 60px;
+        font-weight: bold;
+        color: #fff;
+      }
+
+      .footer__logo {
+        margin-left: 30px;
+        margin-top: 40px;
+        font-family: 'Pacifico', cursive;
+        font-weight: 400;
+        text-transform: lowercase;
+        font-size: 1.5rem;
+    }
     
+    .footer__social-icons {
+        margin-left: 80px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    
+    }
+  }
+
+
+  /*css media responsive for mobile for about us */
+  @media only screen and (max-width: 576px) {
+    .AboutUs {
+        display: flex;
+        justify-content: space-between;
+        background-size: cover;
+        background-position: center;
+      
+       
+        
+      }
+      .hero-section2 h1 {
+        margin-top: 60px;
+        color: #FFF;
+        text-align: right;
+        text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        font-family: Signaturex Demo;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+        margin-right: 36px;
+    }
+    .AboutUs h2 {
+      
+        margin-left: 16px;
+        font-size: 28px;
+    }
+    .head p {
+             margin-bottom: 0px;
+        width: 336px;
+        font-size: 18px;
+        flex-shrink: 0;
+      
+        margin-left: 16px;
+        height: 378px;
+    }
+    p .highlighted {
+        font-size: 26px;
+       
+        font-weight: bold;
+        color: #fff;
+      }
+
+      .footer__logo {
+        margin-left: 30px;
+        margin-top: 40px;
+        font-family: 'Pacifico', cursive;
+        font-weight: 400;
+        text-transform: lowercase;
+        font-size: 1.5rem;
+    }
+    
+    .footer__social-icons {
+        margin-left: 80px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    
+    }
+    .footer__social-icons {
+        margin-left: 138px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    
+    }
+  
+  }
+/*css media responsive for policy page*/
+  
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+
+   
+    .policy{
+
+        height:3000px;
+    }
+    .hero-Policy h1 {
+        margin-top: 150px;
+        
+       
+        font-size: 45px;
+        font-style: normal;
+       
+        margin-left: 56px;
+    }
+    
+ 
+    
+    .headpolicy h2 {
+        margin-top: 90px;
+        font-size: 32px;
+        margin-bottom: 20px;
+     
+     
+        margin-left: 36px;
+      
+    }
+    
+    
+    .headpolicy p {
+    
+        margin-bottom: 50px;
+        margin-left: 55px;
+        
+        width: 656px;
+        color: #FFF;
+        font-family: Alegreya Sans;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+    
+    ol {
+        margin-bottom: 620px;
+        margin-left: 70px;
+        width: 636px;
+       
+        color: #FFF;
+        font-family: Alegreya Sans;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+    
+    ol li {
+        list-style-type: decimal;
+        /* Display numbering */
+    }
+
+
+
+
+}
+
+
+  /*css media responsive for mobile for policyPage */
+  @media only screen and (max-width: 576px) {
+ 
+    .policy{
+
+        height:3500px;
+    }
+
+    .hero-Policy h1 {
+        margin-top: 150px;
+        width: 308px;
+       
+        font-size:40px;
+        font-style: normal;
+       
+        margin-left: 46px;
+    }
+    
+ 
+    
+    .headpolicy h2 {
+        margin-top: 90px;
+        font-size: 32px;
+        margin-bottom: 20px;
+     
+     
+        margin-left: 36px;
+      
+    }
+    
+    
+    .headpolicy p {
+    
+        margin-bottom: 70px;
+        margin-left: 45px;
+        
+        width: 306px;
+        color: #FFF;
+        font-family: Alegreya Sans;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+    
+    ol {
+      
+        margin-bottom: 850px;
+        margin-left: 50px;
+        width: 306px;
+       
+        color: #FFF;
+        font-family: Alegreya Sans;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+    
+    ol li {
+        margin-bottom: 4px;
+        list-style-type: decimal;
+        /* Display numbering */
+    }
+
   }
